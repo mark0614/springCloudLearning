@@ -3,14 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mark</groupId>
-  <artifactId>springCloud-Learning</artifactId>
+  <artifactId>chapter-1-1</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>springCloud-Learning</name>
-  <modules>
-    <module>chapter-1-1</module>
-  </modules>
+
+  <name>chapter-1-1</name>
+  <description>The spring cloud learning chapter-1-1 teaches us how to create a simple micro-service and a service register.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <modules>
+    <module>eureka-server</module>
+    <module>movie-service</module>
+  </modules>
 </project>
