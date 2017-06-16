@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    fetch-registry: false # 是否从Eureka Server获取注册信息，默认为true。因为这是一个单点的Eureka Server，不需要同步其他的Eureka Server节点的数据，故而设为false
+    register-with-eureka: false # 表示是否将自己注册到Eureka Server，默认为true。由于当前这个应用就是Eureka Server，故而设为false
+    service-url:
+      default-zone: http://eureka-server:8761/eureka  # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔
+  server:
+    enable-self-preservation: false # 关闭eureka自我保护机制
+    eviction-interval-timer-in-ms: 30000  # 清理服务注册表的时间间隔，单位：毫秒
+  instance:
+    prefer-ip-address: true
+    hostname: eureka-server
