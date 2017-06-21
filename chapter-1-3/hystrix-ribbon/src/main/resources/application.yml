@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ribbon-movie-hystrix
+server:
+  port: 8090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: feign-movie-hystrix
+server:
+  port: 8070
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
