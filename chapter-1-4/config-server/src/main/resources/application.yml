@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          repos: https://github.com/mark0614/springCloudLearning.git  #配置git仓库位置
+          username: mark0614@126.com  #访问git仓库的用户名
+          password: mln830911 #访问git仓库的用户密码
+          search-paths: /chapter-1-4/config-repo  #配置仓库路径下的相对搜索位置，可以配置多个
+server:
+  port: 9000
