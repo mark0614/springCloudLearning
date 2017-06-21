@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: movie #应用名称，该应用名称必须与配置仓储中的配置文件名称一致。例如：应用名称是movie，远程仓储中配置文件的名称应该是movie.properties或者movie.yml
+  cloud:
+    config:
+      profile: prod #配置文件的profile
+      label: master #远程仓储的分支名称，默认是master
+      uri: http://config-server:9000  #配置中心服务地址
+server:
+  port: 8080
