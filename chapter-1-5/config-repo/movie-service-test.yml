@@ -1,1 +1,2 @@
-movie.path=/movie/test/1.0
+movie:
+  path: /movie/test/1.0
