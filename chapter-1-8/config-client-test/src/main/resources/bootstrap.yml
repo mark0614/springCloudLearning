@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: recommand-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server-bus
+      profile: dev
+      fail-fast: true
+    stream:
+      kafka:
+        binder:
+          brokers: 172.20.5.79:9092
+          zk-nodes: 172.20.5.79:2181
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka-server:8761/eureka
+management:
+  security:
+    enabled: false
+server:
+  port: 8081
