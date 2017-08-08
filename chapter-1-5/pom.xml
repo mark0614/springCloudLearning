@@ -10,6 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>chapter-1-5</artifactId>
-
+    <modules>
+        <module>config-client-eureka</module>
+        <module>config-server-eureka</module>
+    </modules>
 
 </project>

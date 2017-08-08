@@ -3,13 +3,15 @@ spring:
     name: config-server-eureka
   cloud:
     config:
-      uri: https://github.com/mark0614/springCloudLearning.git
-      username: mark0614@126.com
-      password: mln830911
-      search-paths: /chapter-1-5/config-repo
+      server:
+        git:
+          uri: https://github.com/mark0614/springCloudLearning.git
+          username: mark0614@126.com
+          password: mln830911
+          search-paths: /chapter-1-5/config-repo
 server:
   port: 9000
 eureka:
   client:
     service-url:
-      default-zone: http://eureka-server:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka

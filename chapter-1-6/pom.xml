@@ -11,7 +11,8 @@
 
     <artifactId>chapter-1-6</artifactId>
     <modules>
-        <module></module>
+        <module>eureka-server-ha</module>
+        <module>movie-service-ha</module>
     </modules>
 
 </project>

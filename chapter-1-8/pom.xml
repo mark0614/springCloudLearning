@@ -13,6 +13,7 @@
     <modules>
         <module>config-server-bus</module>
         <module>config-client-movie</module>
+        <module>config-client-test</module>
     </modules>
 
 </project>

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud-task
+server:
+  port: 8080
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          task: DEBUG

@@ -1,13 +1,14 @@
+
 spring:
   application:
-    name: eureka-server #Ó¦ÓÃÃû³Æ
+    name: eureka-server #åº”ç”¨åç§°
 server:
-  port: 8761  #·şÎñ¶Ë¿Ú
+  port: 8761  #æœåŠ¡ç«¯å£
 eureka:
   client:
-    fetch-registry: false # ÊÇ·ñ´ÓEureka Server»ñÈ¡×¢²áĞÅÏ¢£¬Ä¬ÈÏÎªtrue¡£ÒòÎªÕâÊÇÒ»¸öµ¥µãµÄEureka Server£¬²»ĞèÒªÍ¬²½ÆäËûµÄEureka Server½ÚµãµÄÊı¾İ£¬¹Ê¶øÉèÎªfalse
-    register-with-eureka: false # ±íÊ¾ÊÇ·ñ½«×Ô¼º×¢²áµ½Eureka Server£¬Ä¬ÈÏÎªtrue¡£ÓÉÓÚµ±Ç°Õâ¸öÓ¦ÓÃ¾ÍÊÇEureka Server£¬¹Ê¶øÉèÎªfalse
+    fetch-registry: false # æ˜¯å¦ä»Eureka Serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œé»˜è®¤ä¸ºtrueã€‚å› ä¸ºè¿™æ˜¯ä¸€ä¸ªå•ç‚¹çš„Eureka Serverï¼Œä¸éœ€è¦åŒæ­¥å…¶ä»–çš„Eureka ServerèŠ‚ç‚¹çš„æ•°æ®ï¼Œæ•…è€Œè®¾ä¸ºfalse
+    register-with-eureka: false # è¡¨ç¤ºæ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eureka Serverï¼Œé»˜è®¤ä¸ºtrueã€‚ç”±äºå½“å‰è¿™ä¸ªåº”ç”¨å°±æ˜¯Eureka Serverï¼Œæ•…è€Œè®¾ä¸ºfalse
     service-url:
-      default-zone: http://eureka-server:8761/eureka  # ÉèÖÃÓëEureka Server½»»¥µÄµØÖ·£¬²éÑ¯·şÎñºÍ×¢²á·şÎñ¶¼ĞèÒªÒÀÀµÕâ¸öµØÖ·¡£Ä¬ÈÏÊÇhttp://localhost:8761/eureka £»¶à¸öµØÖ·¿ÉÊ¹ÓÃ , ·Ö¸ô
+      default-zone: http://eureka-server:8761/eureka  # è®¾ç½®ä¸Eureka Serveräº¤äº’çš„åœ°å€ï¼ŒæŸ¥è¯¢æœåŠ¡å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€ã€‚é»˜è®¤æ˜¯http://localhost:8761/eureka ï¼›å¤šä¸ªåœ°å€å¯ä½¿ç”¨ , åˆ†éš”
   instance:
     hostname: eureka-server

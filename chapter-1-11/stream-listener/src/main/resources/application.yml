@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: stream-listener
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 172.20.5.79:9092
+          zk-nodes: 172.20.5.79:2181
+      bindings:
+        sample-source:
+          destination: testtock
+        input:
+          destination: testtock
+        output:
+          destination: xformed
+          content-type: application/json
+        sample-sink:
+          destination: xformed
